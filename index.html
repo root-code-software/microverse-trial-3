@@ -20,21 +20,21 @@
       how to convice everybody how friendly and great tacos are. 
       Lets make tacos great again!
    </p>
-   <form id="survey-form">
-     <h5 id="name-label">
+   <form id="survey-form" name="tacoForm" onsubmit="return validateForm()" method="post">
+     <label id="name-label">
        Name:
-      </h5>
-     <input id="name" placeholder="Enter your name"/>
-     <h5 id="email-label">
+      </label>
+     <input id="name" placeholder="Enter your name" required/>
+     <label id="email-label">
        Email:
-      </h5>
-     <input type="email" placeholder="Enter your email" />
+      </label>
+     <input type="email" id="email" placeholder="Enter your email" required/>
      <p id="email-error">
        For the great Taco, check your email please, is not correct.
       </p>
-     <h5 id="number-label">
+     <label id="number-label" required>
        Your Rate:
-      </h5>
+      </label>
       <input type="number" id="number" placeholder="Rate how much you like tacos" min="0", max="10" default="6"/>
       <p id="number-type-error">
         Holy Mole, You entered a non integer number on the field.
@@ -42,9 +42,9 @@
       <p id="number-range-error">
         For the big Tortilla wrap, You entered a non valid number on the field.
       </p>
-      <h5 id="dropdown-label">
+      <label id="dropdown-label">
         What is most pleasant feature of a taco for you?
-      </h5>
+      </label>
       <select id="dropdown">
         <option value="tortilla">
           tortilla
@@ -59,28 +59,39 @@
           meat
         </option>
       </select>
-      <h5 id="radiogroup-label">
+      <label id="radiogroup-label">
         Choose the kind of taco you like more: 
-      </h5>
+      </label>
       <div name="kind-o-taco">
-          <input type="radio" id="pastor"/>Al Pastor<br>
-          <input type="radio" id="carnitas" selected="true"/>Carnitas<br>
-          <input type="radio" id="chorizo" />Chorizo<br>
-          <input type="radio" id="vegetal" />Vegetal<br>
-          <input type="radio" id="other" />other<br>
+          <input type="radio" value="pastor"    id="pastor"/>                   
+          Al Pastor<br>
+          <input type="radio" value="carnitas"  id="carnitas" selected="true"/> 
+          Carnitas<br>
+          <input type="radio" value="chorizo"   id="chorizo" />                 
+          Chorizo<br>
+          <input type="radio" value="vegetal"   id="vegetal" />                 
+          Vegetal<br>
+          <input type="radio" value="other"     id="other" />                   
+          other<br>
       </div>
+      <label id="ckeckboxgroup-label">
         Which of the next sauces or topping you like in your tacos?
-      </h5>
+      </label>
       <div name="kind-o-topping">
-          <input type="checkbox" name="chipotle" value="chipotle">Chipotle<br>
-          <input type="checkbox" name="pizza" value="pizza">Pizza<br>
-          <input type="checkbox" name="fajita " value="fajita" checked>Fajita<br>
-          <input type="checkbox" name="tamales " value="tamales" >Tamales<br>
-          <input type="checkbox" name="other " value="other" >Other<br>
+          <input type="checkbox" name="chipotle"  name="chipotle" value="chipotle">       
+          Chipotle<br>
+          <input type="checkbox" name="pizza"     name="pizza"    value="pizza">          
+          Pizza<br>
+          <input type="checkbox" name="fajita"    name="fajita"   value="fajita" checked> 
+          Fajita<br>
+          <input type="checkbox" name="tamales"   name="tamales"  value="tamales" >       
+          Tamales<br>
+          <input type="checkbox" name="other"     name="other"    value="other" >         
+          Other<br>
       </div>
-      <h5 id="comment-label">
+      <label id="comment-label">
         Share your opinion about tacos:
-      </h5>
+      </label>
       <textarea rows="4" cols="50" >Tell me your opinion</textarea>
       <button type="submit" id="submit">
         Submit your taco opinion!
