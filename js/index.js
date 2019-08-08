@@ -26,3 +26,16 @@ INSTRUCTIONS:
 
 // Once you have read the above messages, you can delete all comments. 
 "use strict";
+
+function validateForm() {
+
+var name = document.getElementById("name");
+var email = document.getElementById("email");
+var number = document.getElementById("number");
+
+var email_error = document.getElementById("email-error");
+var number_type_error = document.getElementById("number-type-error");
+var number_range_error = document.getElementById("number-range-error");
+
+ 
+} 
