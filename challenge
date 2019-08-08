@@ -1,0 +1,27 @@
+function bonAppetit(bill, k, b) {
+    let total = 0;
+    const charged = 0
+    bill.map(item => {
+        if (item !== k) {
+            total = total + item
+        }
+    })
+    const actual = total / 2;
+
+    if (actual === b) {
+        return 'Bon Appetit'
+    } 
+    return b - actual;
+}
+
+const nk = '4 1'.replace(/\s+$/g, '').split(' ');
+
+const n = parseInt(nk[0], 10);
+
+const k = parseInt(nk[1], 10);
+
+const bill = '3 10 2 9'.replace(/\s+$/g, '').split(' ').map(billTemp => parseInt(billTemp, 10));
+
+const b = parseInt('12'.trim(), 10);
+
+console.log(bonAppetit(bill, k, b))
