@@ -10,24 +10,31 @@
 <body>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
  
- <main>
+ <main id="form-outer">
    <h1 id="title">
       How Much do you like Tacos?
    </h1>
    <p id="description">
       I've ever assumed that as tacos are so delicious, everyone just love them.
       But yesterday i found that some people actually hated tacos, so want to know 
-      why friendly and great tacos get some bad comments. Lets make tacos great again!
+      how to convice everybody how friendly and great tacos are. 
+      Lets make tacos great again!
    </p>
    <form id="survey-form">
-     <h5 id="name-label">Name: </h5>
+     <h5 id="name-label">
+       Name:
+      </h5>
      <input id="name" placeholder="Enter your name"/>
-     <h5 id="email-label">Email: </h5>
+     <h5 id="email-label">
+       Email:
+      </h5>
      <input type="email" placeholder="Enter your email" />
      <p id="email-error">
        For the great Taco, check your email please, is not correct.
       </p>
-     <h5 id="number-label">Your Rate: </h5>
+     <h5 id="number-label">
+       Your Rate:
+      </h5>
       <input type="number" id="number" placeholder="Rate how much you like tacos" min="0", max="10" default="6"/>
       <p id="number-type-error">
         Holy Mole, You entered a non integer number on the field.
@@ -35,21 +42,49 @@
       <p id="number-range-error">
         For the big Tortilla wrap, You entered a non valid number on the field.
       </p>
-      <h5 id="dropdown-label">What is mosnt pleasant feature of a taco for you? </h5>
+      <h5 id="dropdown-label">
+        What is most pleasant feature of a taco for you?
+      </h5>
       <select id="dropdown">
-        <option value="tortilla">tortilla</option>
-        <option value="mole">mole</option>
-        <option value="guacamole">guacamole</option>
-        <option value="meat">meat</option>
+        <option value="tortilla">
+          tortilla
+        </option>
+        <option value="mole">
+          mole
+        </option>
+        <option value="guacamole">
+          guacamole
+        </option>
+        <option value="meat">
+          meat
+        </option>
       </select>
-      <h5 id="radiogroup-label">Choose the kind of taco you like more: </h5>
+      <h5 id="radiogroup-label">
+        Choose the kind of taco you like more: 
+      </h5>
       <div name="kind-o-taco">
-          <input type="radio" id="pastor" label="Al Pastor"/>
-          <input type="radio" id="carnitas" label="Carnitas" selected="true"/>
-          <input type="radio" id="chorizo" label="Chorizo"/>
-          <input type="radio" id="vegetal" label="vegetal"/>
-          <input type="radio" id="other" label="other"/>
+          <input type="radio" id="pastor"/>Al Pastor<br>
+          <input type="radio" id="carnitas" selected="true"/>Carnitas<br>
+          <input type="radio" id="chorizo" />Chorizo<br>
+          <input type="radio" id="vegetal" />Vegetal<br>
+          <input type="radio" id="other" />other<br>
       </div>
+        Which of the next sauces or topping you like in your tacos?
+      </h5>
+      <div name="kind-o-topping">
+          <input type="checkbox" name="chipotle" value="chipotle">Chipotle<br>
+          <input type="checkbox" name="pizza" value="pizza">Pizza<br>
+          <input type="checkbox" name="fajita " value="fajita" checked>Fajita<br>
+          <input type="checkbox" name="tamales " value="tamales" >Tamales<br>
+          <input type="checkbox" name="other " value="other" >Other<br>
+      </div>
+      <h5 id="comment-label">
+        Share your opinion about tacos:
+      </h5>
+      <textarea rows="4" cols="50" >Tell me your opinion</textarea>
+      <button type="submit" id="submit">
+        Submit your taco opinion!
+      </button>
    </form>
  </main>
   <script src="js/index.js"></script>
