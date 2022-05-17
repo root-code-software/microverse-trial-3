@@ -1,4 +1,5 @@
 <!-- PROJECT SHIELDS -->
+
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues-open][issues-open-shield]][issues-url]
@@ -11,7 +12,7 @@
 <br />
 <p align="center">
   <a href="https://">
-	  <img src="https://img.icons8.com/color/96/000000/full-image.png" alt="Logo"/>
+	  <img src="https://user-images.githubusercontent.com/67714964/168818091-52b5432e-f7bd-4880-b71e-ddbb60477e0e.jpg" weight="300px" height="300px" alt="Logo"/>
   </a>
 
   <h1 align="center">
@@ -32,10 +33,10 @@
 
 ## Table of Contents
 
-1. [Author](#author)
-2. [Contributing](#contributing)
-3. [Show your support](#show-your-support)
-4. [License](#license)
+- [Author](#author)
+- [Contributing](#contributing)
+- [Show your support](#show-your-support)
+- [License](#license)
 
 # Author
 
@@ -81,7 +82,7 @@
         </div>
     </td>
   </tr>
-</table> 
+</table>
 
 # Contributing
 
@@ -106,6 +107,7 @@ Icons from:
 Feel free to fork this project and improve it
 
 <!-- MARKDOWN LINKS & IMAGES -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/Israel-Laguan/microverse-trial-3?style=for-the-badge
 [contributors-url]: https://github.com/Israel-Laguan/microverse-trial-3/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/Israel-Laguan/microverse-trial-3?style=for-the-badge
