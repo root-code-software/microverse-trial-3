@@ -11,12 +11,12 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://">
+  <a href="https://github.com/Israel-Laguan/microverse-trial-3">
 	  <img src="https://user-images.githubusercontent.com/67714964/168818091-52b5432e-f7bd-4880-b71e-ddbb60477e0e.jpg" weight="300px" height="300px" alt="Logo"/>
   </a>
 
   <h1 align="center">
-	Microverse-trial-3
+	Tacos
   </h1>
 
   <p align="center">
